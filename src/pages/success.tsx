@@ -37,7 +37,7 @@ const Success = ({customerName, lineItems}: SuccessProps) => {
       </ContainerImage>
       <h1>Compra efetuada</h1>
       <p>
-      Uhuul <strong>{customerName}</strong>, sua compra de {lineItems.length} camisetas já está a caminho da sua casa. 
+      Uhuul <strong>{customerName}</strong>, sua compra de {lineItems.length} camisetas já está a caminho da sua casa...
       </p>
 
       <Link href='/'>

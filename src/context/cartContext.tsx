@@ -26,9 +26,6 @@ export const CartContext = createContext({} as CartContextData)
 function CartProvider({ children }: CartProviderProps) {
   const [items, setItems] = useState<Product[]>([])
 
-
-  console.log(items)
-
   function addToCart(product: Product) {
 
     const productAlreadExists = items.some((item) => {
