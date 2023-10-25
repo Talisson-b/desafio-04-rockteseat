@@ -66,7 +66,11 @@ export default Product
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [
-      {params: {id: 'prod_Os4Oa41Z6SqbCX'}}
+      {params: {id: 'prod_Os4Oa41Z6SqbCX'}},
+      {params: {id: 'prod_Os4QMUusghAxnM'}},
+      {params: {id: 'prod_Os4PVFOsyalkT5'}},
+      {params: {id: 'prod_Os4NPHYuxWFg7t'}},
+
     ],
    fallback: 'blocking',
   }
