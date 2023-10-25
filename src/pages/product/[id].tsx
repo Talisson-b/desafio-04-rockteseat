@@ -1,12 +1,9 @@
 import { useContext } from 'react'
 import { ImageContainer, ProductContainer, ProductDetails } from '@/styles/pages/produc'
-
 import Head from 'next/head'
 import Image from 'next/image'
-
 import Stripe from 'stripe'
 import { CartContext } from '@/context/cartContext'
-import { ToastContainer } from 'react-toastify'
 import { formatPrice } from '@/components/header'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { stripe } from '@/lib/stripe'
@@ -32,17 +29,7 @@ const Product = ({product}: ProductProps) => {
       {product.name}
     </title>
    </Head>
-   <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="dark" />
+   
   <ProductContainer>
   <ImageContainer>
     <Image src={product.imageUrl} width={520} height={480} alt=''/> 
