@@ -15,9 +15,9 @@ export default async function handler(request: NextApiRequest, response: NextApi
   }
 
 
-  const successUrl = `${process.env.NEXT_URL}/success?session_id={CHECKOUT_SESSION_ID}`
+  const successUrl = `eshoptb.vercel.app/success?session_id={CHECKOUT_SESSION_ID}`
 
-  const cancelUrl = `${process.env.NEXT_URL}/`
+  const cancelUrl = `eshoptb.vercel.app/`
 
   const checkoutSession = await stripe.checkout.sessions.create({
     cancel_url: cancelUrl,
